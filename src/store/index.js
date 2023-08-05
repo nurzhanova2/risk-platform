@@ -1,17 +1,15 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
+import chat from './chat';
+import riskCalculator from './riskCalculator';
+import financialTerms from './financialTerms';
 
 export default new Vuex.Store({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-  }
-})
+    chat, 
+    riskCalculator,
+    financialTerms,
+  },
+});
